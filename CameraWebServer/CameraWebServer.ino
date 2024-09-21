@@ -22,8 +22,8 @@
 
 #include "camera_pins.h"
 
-const char* ssid = "LaowaiNetMobile";
-const char* password = "bionicman";
+const char* ssid = "";
+const char* password = "";
 
 void startCameraServer();
 
@@ -58,7 +58,7 @@ void setup() {
   config.fb_location = CAMERA_FB_IN_PSRAM;
   config.jpeg_quality = 12;
   config.fb_count = 1;
-  
+
   // if PSRAM IC present, init with UXGA resolution and higher JPEG quality
   //                      for larger pre-allocated frame buffer.
   if(psramFound()){
